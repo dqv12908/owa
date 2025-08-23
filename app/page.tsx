@@ -1,24 +1,11 @@
 "use client"
 
-import { useState } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export default function HomePage() {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = async () => {
-    try {
-      await navigator.clipboard.writeText('0x1234567890abcdef1234567890abcdef12345678');
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
-    } catch (err) {
-      console.error('Failed to copy: ', err);
-    }
-  };
-
   const members = [
     {
       name: "Zank",
