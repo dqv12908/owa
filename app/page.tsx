@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -104,9 +105,11 @@ export default function HomePage() {
           <p className="text-xl md:text-2xl text-blue-200 mb-4 font-medium">Đạo quân cởi trần hút thuốc</p>
 
           <div className="w-full max-w-2xl mx-auto mb-8 aspect-video bg-blue-900/20 rounded-lg border-2 border-dashed border-yellow-400 flex items-center justify-center">
-            <img
+            <Image
               src="/logo.png"
               alt="Owacrypto Community Hero Image"
+              width={800}
+              height={450}
               className="w-full h-full object-cover rounded-lg opacity-80"
             />
           </div>
@@ -209,7 +212,7 @@ export default function HomePage() {
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-8">⚔️ Lời thề cộng đồng</h2>
 
           <blockquote className="text-2xl md:text-3xl font-medium text-yellow-300 mb-8 italic">
-            "Không kèo nào bỏ lỡ, không ví nào trống rỗng. Cởi trần mà vẫn triệu phú."
+            &ldquo;Không kèo nào bỏ lỡ, không ví nào trống rỗng. Cởi trần mà vẫn triệu phú.&rdquo;
           </blockquote>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
