@@ -11,7 +11,7 @@ export default function HomePage() {
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText('0x1234567890abcdef1234567890abcdef12345678');
+      await navigator.clipboard.writeText('Coming Soon');
       setCopied(true);
       setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
     } catch (err) {
