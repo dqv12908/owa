@@ -107,12 +107,23 @@ export default function HomePage() {
             <span className="text-yellow-300 font-semibold">Owacrypto Community</span>.
           </p>
 
-          {/* Contract Address Section */}
+          {/* Contract Address Copy Section */}
           <div className="mb-8 max-w-2xl mx-auto">
             <div className="bg-blue-900/30 border border-yellow-400/50 rounded-lg p-4">
-              <div className="text-center">
-                <p className="text-sm text-blue-200 mb-1">Contract Address</p>
-                <p className="text-yellow-300 font-medium text-lg">Coming Soon 🚀</p>
+              <div className="flex items-center justify-between">
+                <div className="flex-1">
+                  <p className="text-sm text-blue-200 mb-1">Contract Address</p>
+                  <p className="text-yellow-300 font-mono text-sm break-all">5zxe7Poisi8f9RnTVaLa7pBvA4S4nYc7QEoy5UkFdaos</p>
+                </div>
+                <Button 
+                  size="sm" 
+                  className="ml-4 bg-blue-800 hover:bg-blue-700 text-white border-yellow-400"
+                  onClick={() => {
+                    navigator.clipboard.writeText('5zxe7Poisi8f9RnTVaLa7pBvA4S4nYc7QEoy5UkFdaos');
+                  }}
+                >
+                  Copy
+                </Button>
               </div>
             </div>
           </div>
